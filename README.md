@@ -16,7 +16,7 @@ This project is built using:
 To get started, clone the repository and run the following commands:
 
 ```bash
-git clone https://github.com/adisuyash/austingriffithtwin.git
+git clone https://github.com/GxNaitik/austingriffithtwin.git
 
 cd austingriffithtwin
 npm install

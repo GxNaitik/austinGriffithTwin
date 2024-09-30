@@ -1,0 +1,146 @@
+body,
+h1,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  /* Updated for better contrast */
+  height: 100vh;
+  padding: 20px;
+  background-image: url("https://miro.medium.com/v2/resize:fit:2000/1*ljbOnrficYfUEVimfM2Jrw.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  /* Ensure the background image takes the full width */
+  height: 100vh;
+  /* Ensure the background image takes the full width */
+}
+
+.mainhead {
+  text-align: left;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 8px #747474, -3px -3px 8px #747474;
+}
+
+.chat-container {
+  width: 50%;
+  max-height: 80vh;
+  margin: 20px;
+  border: 1px solid rgb(36, 38, 183);
+  border-radius: 8px;
+  background-color: rgba(207, 176, 250, 0.7);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 2.3em;
+  /* Adjust font size as needed */
+  color: #000;
+  /* You can keep or change this as per your design */
+  text-shadow: 1px 1px 5px #fff;
+  /* Optional for more emphasis */
+  text-align: center;
+  width: 100%;
+}
+
+
+h3 {
+  margin-bottom: 15px;
+  /* Adds space below */
+  color: #000000;
+  /* Change color to black */
+  text-align: center;
+  font-size: 1.6em;
+  /* Increase font size */
+  text-shadow: 1px 1px 10px #fff;
+  /* Optional for more emphasis */
+
+}
+
+.para {
+  font-size: 1.3em;
+  /* Increase font size */
+  color: #000;
+  /* Change color to black */
+  text-align: center;
+  text-shadow: 1px 1px 10px #ece4e4;
+  /* Optional for more emphasis */
+}
+
+
+.chat-box {
+  flex-grow: 1;
+  overflow-y: auto;
+  border: 1px solid #C2AFF8;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  max-height: 300px;
+  min-height: 150px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  /* Align placeholder below the h3 */
+  width: 100%;
+  /* Make the width consistent with chat-box */
+}
+
+input[type="text"] {
+  width: calc(100%);
+  /* Adjusting width to prevent overflow */
+  padding: 10px;
+  border: 1px solid #C2AFF8;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  /* Added margin below */
+  box-sizing: border-box;
+  /* Ensures padding and border are included in width */
+}
+
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff9100;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+}
+
+/* Responsive design for mobile devices */
+@media screen and (max-width: 768px) {
+  .chat-container {
+    width: 90%;
+    max-height: 80vh;
+  }
+
+  .profile-image {
+    width: 80px;
+    height: 80px;
+  }
+}
